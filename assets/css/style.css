@@ -668,4 +668,8 @@ align-items: center;
 .navbar.navbar-expand-lg{
     width:100%;
 }
+.footerMenu li{
+    padding:10px 0;
+    margin-left:50px;
+}
 }           
