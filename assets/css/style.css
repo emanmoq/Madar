@@ -509,6 +509,7 @@ display: inline-block;
 .links a:hover p{
 color:#1191D0
 }
+
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
@@ -550,6 +551,7 @@ width:23px;
     color:#2F3D44;
     margin-bottom: 30px;;
 }
+
 .navbar-collapse.collapse{
     background-color: rgba(255,255,255,.97);
     position: absolute;
@@ -644,5 +646,26 @@ width:23px;
 }
 .links a:first-child{
     margin-right:0;
+}
+.mobilesearch{    float: left!important;
+    background: #F8F7FA;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+text-align: center;
+font-size:24px;
+justify-content: center;
+
+display: flex !important;
+align-items: center;
+
+}
+.mobilesearch i{
+    display: flex;
+    color:#2F3D44;
+    justify-content: center;
+}
+.navbar.navbar-expand-lg{
+    width:100%;
 }
 }           
