@@ -551,6 +551,112 @@ text-align: center;
 .videos .newsImg .circle i{
     line-height: 1;
 }
+.innerHeader{
+    padding:42px 0 52px;
+    background-color: #2F3D44;
+    position: relative;
+}
+.innerHeader:before{
+    background-image: url(../images/middle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    opacity: .07;
+}
+.innerHeader h2{
+    font-size:2.1875em;
+    color:white;
+}
+.headerLinks span{
+    font-size:1.375em;
+    color:white;
+    margin-left:9px;
+}
+.headerLinks span.homeLink {
+    color:#ABB0B5;
+}
+.middleEastsection{
+    padding:90px 0;
+}
+.marginBottomsection{
+    margin-bottom:90px;
+}
+.middleEastsection .freeBox{
+    margin-bottom:90px;
+}
+.middleEastsection .latestNews .categ{
+    position: relative;
+}
+.middleEastsection .newsBox {
+    height:365px;
+}
+.middleEastsection .newsBox .newsImg{
+    height:184px;
+}
+.newsImg img{
+    object-fit: cover;
+    width:auto
+}
+.pagination .page-link{
+font-size:.9em;
+color:#2F3D44;
+opacity: .39;
+font-family:"DUBAI-BOLD";
+margin-left:10px;
+border:0;
+
+}
+.pagination .page-link.last i{ 
+transform: rotate(180deg);
+}
+.pagination .page-link i{
+line-height: 30px;
+font-size: .8em;
+}
+
+.pagination  .page-item:first-child .page-link,.pagination   .page-item:last-child .page-link{
+    width:30px;
+    height:30px;
+    background-color: #2F3D44;;
+    color:white;
+    border-radius: 50%;
+    opacity: 1;
+    text-align: center;
+    padding: 0;
+    transition: all .5s;;
+}
+.pagination   .page-item:last-child .page-link{
+    margin-right:10px;
+}
+.pagination .page-item:first-child:hover .page-link,.pagination .page-item:last-child:hover .page-link{
+    background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
+    transition: all .5s;;
+
+}
+.page-item .page{
+    color:#2F3D44;
+    opacity: 1;
+    cursor: auto;
+}
+.page-link:hover{
+    background-color: transparent;
+    color:#1191D0;
+    opacity: 1;
+}
+.page-link.page{background-color: transparent;
+color:#2F3D44}
+.page-item.active .page-link{
+    opacity: 1;
+    color:#2F3D44;
+    background-color: transparent;
+    border:0;
+    text-decoration: underline;
+}
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
