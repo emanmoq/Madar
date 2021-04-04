@@ -52,6 +52,8 @@ jQuery(function ($) {
       });
       $(".close").click(function(){
           $(".collapse").removeClass('show')
-      })
+      });
+
+
 });
 

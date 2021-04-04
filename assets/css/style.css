@@ -139,6 +139,7 @@ border:0;
 }
 .heroNewsImg{
     width:100%;
+    position: relative
 
 }
 .circle{
@@ -509,7 +510,47 @@ display: inline-block;
 .links a:hover p{
 color:#1191D0
 }
+.videos{
+padding:92px 0;
+    
+}
+video{
+    width:100%;
+    object-fit: cover;
 
+}
+#duration{
+    display: inline-block;
+}
+.durationSec{
+position: absolute;
+right:0;
+bottom:0;
+width:74px;
+height:21px;
+border-radius: 16px 0 0 0 ;
+font-size:.9em;
+color:#2F3D44;
+background-color: white;
+text-align: center;
+}
+.durationSec i{
+    color:#1191D0;
+    margin-left:5px;
+}
+.videos .newsImg {
+    position: relative;
+}
+.videos .newsImg .circle{
+    position: absolute;
+    left: 38%;
+    top: 37%;
+    padding: 7px;
+    text-align: center;
+}
+.videos .newsImg .circle i{
+    line-height: 1;
+}
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
