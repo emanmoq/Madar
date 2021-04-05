@@ -1009,4 +1009,24 @@ align-items: center;
 .contactSocial{
     text-align: center;
 }
+.newsDetailsSec .topNews{
+    position: relative;
+    bottom: auto;
+    padding:0;
+    margin-bottom: 30px;
+    margin-top:15px;
+}
+.heronewsDetails{
+    margin-top:15px;
+}
+.heronewsDetails h4{
+    font-family:"DUBAI-MEDIUM";
+  
+}
+.newsDetailsSec .heroNewsImg{
+    margin-bottom: 0;
+}
+.detailsNewsPge .newsBox .newsImg{
+    height:100px;
+}
 }           
