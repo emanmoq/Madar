@@ -754,6 +754,56 @@ bottom:-30px;
 .contactInfoSec{
     margin-top:50px;
 }
+.contactInfo{
+    display: inline-block;
+    margin-left:27px;
+}
+.contactInfoSec li{
+    margin-bottom:55px;
+    list-style-type: none;
+}
+.contactIcon{
+    width:70px;
+    height:70px;
+    background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
+border-radius: 16px;
+padding:20px 25px;
+margin-left:22px;
+float: right;
+}
+.infoDetails{
+    float: right;
+}
+.infoDetails p{
+    font-size:1.5em;
+    color:#2F3D44;
+    margin-bottom: 10px;;
+}
+.infoDetails h3{
+    color:#2F3D44;
+    font-size:2.1875em;
+    margin-bottom: 0;
+}
+.contactSocial{
+    text-align: right;
+}
+.contactSocial li{
+    width:51px;
+    height:51px;
+    margin-left:22px;
+    background-color: #2F3D44;
+    padding:13px;
+    transition: all;
+    margin-bottom: 0;
+    
+}
+.contactSocial li a{
+    color:white;
+}
+.contactSocial li:hover{
+    background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
+
+}
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
