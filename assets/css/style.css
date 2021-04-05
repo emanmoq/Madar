@@ -1029,4 +1029,16 @@ align-items: center;
 .detailsNewsPge .newsBox .newsImg{
     height:100px;
 }
+.middleEastsection .newsBox .newsImg{
+    height:100px;
+}
+.marginBottomsection{
+    margin-bottom: 40px;;
+}
+.middleEastsection .newsBox{
+    height:250px;
+}
+.pagination{
+    justify-content: center;
+}
 }           
