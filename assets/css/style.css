@@ -1058,4 +1058,13 @@ margin-top:0;
         .footerMenu{
             padding-bottom:30px;
         }
+.newsImg img{
+    width:100%;
+}
+.contactForm .form-group.marginGroup {
+    margin-left: 17px;
+}
+.contactInfoSec li .contactInfo:last-child{
+    margin-left:0;
+}
 }         
