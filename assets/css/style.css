@@ -966,4 +966,47 @@ align-items: center;
     padding:10px 0;
     margin-left:50px;
 }
+.contactInfoSec li{
+    margin-bottom: 0;;
+}
+.contactInfo{
+    margin-bottom: 72px;
+}
+.contactInfoSec li:last-child .contactInfo:last-child{
+    margin-bottom: 0;
+}
+.googlemap{
+    margin:35px 0;
+    
+}
+.googlemap object{
+    height:280px;
+}
+.contactForm .form-group.marginGroup{
+    margin-left:0;
+
+}
+.contactForm .form-group{
+
+    width:100%;
+}
+.sendBtn{
+    left:43%;
+}
+.headerLinks{
+    float: none !important;
+}
+.innerHeader h2{
+    margin-bottom: 10px;;
+}
+.contactUs{
+    padding:32px 0 50px;
+}
+.contactInfoSec li:last-child .contactInfo:last-child .infoDetails{
+    float: none;
+    text-align: center;
+}
+.contactSocial{
+    text-align: center;
+}
 }           
