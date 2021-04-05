@@ -1041,4 +1041,21 @@ align-items: center;
 .pagination{
     justify-content: center;
 }
-}           
+}  
+@media(min-width:768px) and (max-width:1023px){
+    .heronewsDetails{
+margin-top:0;
+    }
+    body{
+        font-size: 14px;
+    }
+    .socialIcons li{
+        margin-left:15px;
+    }
+    .footerMenuSection {
+        margin-top: 20px;
+        padding-top:40px;}
+        .footerMenu{
+            padding-bottom:30px;
+        }
+}         
