@@ -32,6 +32,14 @@ a:hover{
 }
 .topHeader{
     padding:14px 0;
+    display: flex;
+}
+
+.topHeader .col-md-6{
+    display: flex;
+}
+.topHeader .col-md-6:last-child{
+    justify-content: flex-end;
 }
 .logo{
     width:190px;
@@ -43,7 +51,8 @@ body{
     text-align: right;
     font-size: 14px;
     box-sizing: border-box;
-    font-family:  "DUBAI-REGULAR";;
+    font-family:"DUBAI-REGULAR";
+
 }
 h1,h2,h3{
     font-family:"DUBAI-BOLD";
@@ -52,7 +61,11 @@ h1,h2,h3{
 h4,h5,h6{
     font-family:"DUBAI-MEDIUM";
 }
-
+.topHeader .socialIcons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .socialIcons li{
     width:24px;
     height:24px;
@@ -79,7 +92,7 @@ h4,h5,h6{
 header{
     background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
     padding:15px 0;
-    height:80px;
+    height:70px;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
     color:white;
@@ -103,8 +116,13 @@ header{
     padding:0 17px;
 
 }
+header .searchBox{
+    display: flex;
+    align-self: center;
+}
 .headerSearch .form-group{
     display: inline-block;
+    margin-bottom: 0;
 }
 
 .headerSearch .form-control{
@@ -139,8 +157,15 @@ border:0;
 }
 .heroNewsImg{
     width:100%;
-    position: relative
+    position: relative;
+    height:300px;
+    overflow: hidden;
 
+}
+.heroNewsImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
 }
 .circle{
     width: 32px;
@@ -154,12 +179,18 @@ border:0;
     float: right;
     margin-left:5px;
 }
+.heronewsDetails .circle{
+    padding:6px;
+}
+.tag .circle{
+    padding:6px;
+}
 .topNews{
     margin-right :-9%;
     font-size:.9em;
     color:#2F3D44;
     line-height: 30px;
-    margin-bottom: 50px;;
+    margin-bottom: 6px;;
 }
 .tag{
     display: inline-block;
@@ -191,7 +222,7 @@ border:0;
 .newsImg{
     position: relative;
     width:100%;
-    height:70%;
+    height:250px;
     overflow: hidden;
     border:2px solid white;
 }
@@ -204,16 +235,15 @@ border:0;
     top:0;
     background-color:rgba(0,0, 0, .03)
 }
-.newsBox{
-    height:216px;
+.newsImg img{
+    height: 100%;;
 }
 .heroNewsImgcont{
     position: relative;
 }
 .categ{
     position: absolute;
-    bottom:-14px;
-    height:32px;
+    bottom: -18px;
    padding-left:5px;
     background-color: white;
     border-radius: 16px;
@@ -224,11 +254,26 @@ border:0;
     font-size: 1.5625em;
     margin-top:33px;
     margin-bottom:15px;
+    height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+}
+.newsBox{
+    cursor: pointer;
+}
+.newsBox:hover h6{
+text-decoration: underline;
 }
 .date{
     font-size:.9em;
     color:#2F3D44;
     opacity: .7;
+}
+.date i{
+    width:20px;
+    height: 15px;
+    display: inline-block;
+    margin-left:5px;
 }
 .middleEast{
   
@@ -257,14 +302,22 @@ border:0;
     height: 100%;
     opacity: .07;
 }
-
-.moreBtn:hover .circle{
+.moreBtn{
+    float: right;
+    font-size: 1.1em;
+    color:#2F3D44;
+}
+.moreBtn .circle{
     transition: all .5s;;
+    background-color: #2F3D44;
+    color:white;
+    background-image: none;
+    float: none;
+    display: inline-block;
+    margin-right: 9px;;
 }
 .moreBtn:hover .circle{
-    background-image: none;
-    background-color: white;
-    color:#1191D0;
+    background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
     transition: all .5s;;
 }
 .freespace{
@@ -277,7 +330,7 @@ border:0;
 .freeBox{
     background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
     padding:31px 35px;
-    height:308px;
+    height:250px;
 
 }
 .innerBox{
@@ -362,18 +415,14 @@ button:focus{
     outline:  0 !important;
 }
 .articlesCarousel.owl-carousel .owl-nav .owl-next:hover, .articlesCarousel.owl-carousel .owl-nav .owl-prev:hover{
-background-color: white;
-color:#2F3D44;
-border:1px solid #2F3D44;
+    background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
+color:white;
 transition: all .5s;
 }
 .articlesCarousel.owl-carousel .owl-nav .owl-prev{
     margin-left:10px;
 }
-.health-seicne .moreBtn .circle{
-    background-image: none;
-    background-color: #2F3D44;
-}
+
 .health-seicne {
     padding-bottom:93px;
 }
@@ -427,7 +476,7 @@ overflow: hidden;
 .footer{
     background-color: #2F3D44;
     position: relative;
-    padding:48px 0 50px; 
+    padding:48px 0 30px; 
 }
 .footer .footerText{
     color:white;
@@ -447,12 +496,12 @@ overflow: hidden;
 }
 .footerMenuSection{
 margin-top:44px;
-padding-top:75px;
-border-top: 1px solid #707070;
+padding-top:50px;
+/*border-top: 1px solid #707070;*/
 }
 .footerMenu{
     text-align: center;
-    padding-bottom: 107px;
+    padding-bottom: 90px;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  ) 1;
@@ -600,7 +649,6 @@ text-align: center;
 }
 .newsImg img{
     object-fit: cover;
-    width:auto
 }
 .pagination .page-link{
 font-size:.9em;
@@ -816,6 +864,9 @@ float: right;
         border-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  ) 1;
     }
     .topHeader{
+        display: none;
+    }
+    header .searchBox{
         display: none;
     }
     .navbar-toggler{
@@ -1045,6 +1096,9 @@ align-items: center;
 @media(min-width:768px) and (max-width:1023px){
     .heronewsDetails{
 margin-top:0;
+    }
+    header .searchBox{
+        display: none;
     }
     body{
         font-size: 14px;
