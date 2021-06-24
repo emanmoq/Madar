@@ -53,7 +53,20 @@ jQuery(function ($) {
       $(".close").click(function(){
           $(".collapse").removeClass('show')
       });
-
+      $(".searchboxclose").click(function(){
+        $(".mobilesearchBox").css("display","none");
+    });
+      $(".mobilesearch").click(function(){
+        $(".mobilesearchBox").css("display","block");
+      });
+      $(".Urgent .close").click(function(){
+        $(".Urgent").css("display","none");
+    });
+    $("body ").click(function(){
+      $(".Urgent").css({opacity:"1",top:"0"});
+  });
+    
+      
 
 });
 

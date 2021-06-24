@@ -274,9 +274,7 @@ text-decoration: underline;
     margin-left:5px;
 }
 .middleEast{
-  
     background-color: #F8F7FA;
-
     position: relative;
     padding:92px 0 208px;
 }
@@ -853,6 +851,78 @@ float: right;
     background-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  );
 
 }
+.mobilesearchBox{
+    width:100vw;
+    background-color: white;padding:10px;
+    position: absolute;
+    z-index: 9999999999999;
+    top:0;
+    left:0;
+    display: none;
+}
+.mobileFormSearch .form-group{
+    width:80%;
+    display: inline-block;
+    
+}
+.mobileFormSearch .form-control{
+    border:1px solid #eee;
+}
+.mobileFormSearch  .seachBtn {
+    display: inline-block;
+}
+.mobileFormSearch  .seachBtn i{
+    color:#eee;
+    font-size: 18px;;
+}
+.Urgent{
+    width: 100%;
+    transition: all .5s;
+    opacity: 0;
+    top:-20%;
+    position: relative;
+}
+.UrgentTitle{
+    background-color: #2F3D44;
+    position: relative;
+    float:right;
+    width:20%;
+    padding:18px 0;
+    font-size:1.875em;
+    color:white;
+    margin:0;
+    padding-right: 15% }
+.UrgentTitle:before{
+    background-image: url(../images/middle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    opacity: .07;
+}
+.UrgentDetails{
+    background-image: linear-gradient(45deg , #B90000 ,#E02323);
+    margin:0;
+    padding:18px 0;
+    font-size:1.5em;
+    color:white;
+    float:right;
+    width:80%;
+    padding-right:30px;
+}
+.Urgent .close{
+    position: absolute;
+    left:15%;
+    top:18px;
+    z-index: 1;
+    color:white;
+    opacity: 1;
+}
+
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
@@ -923,7 +993,14 @@ width:23px;
     background-color: #F8F7FA;
     border-radius: 8px;
 }
-
+.searchboxclose.close span{
+    background-color: transparent;
+    }
+    .searchboxclose.close {
+        position: absolute;
+        top:0px;
+        left:5px;
+    }
 .topNews{
     margin-right:0;
 }
