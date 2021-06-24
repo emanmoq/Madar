@@ -881,6 +881,8 @@ float: right;
     opacity: 0;
     top:-20%;
     position: relative;
+    height: 55px;
+    overflow: hidden;
 }
 .UrgentTitle{
     background-color: #2F3D44;
@@ -921,11 +923,21 @@ float: right;
     z-index: 1;
     color:white;
     opacity: 1;
+    background-color: transparent;
 }
 
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
+    }
+    .UrgentTitle {
+        padding-right: 5%;;
+    }
+    .Urgent .close{
+        left:2%;
+    }
+    .Urgent .close span{
+background-color: transparent;
     }
     header{
         height: auto;
