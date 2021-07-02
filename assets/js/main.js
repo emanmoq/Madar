@@ -70,3 +70,23 @@ jQuery(function ($) {
 
 });
 
+
+setInterval(() => {
+  $(".UrgentDetails").removeClass('UrgentDetailsTop');
+  if((next=$(".UrgentDetails.active").next('.UrgentDetails')).length){
+    // $(".UrgentDetails.active").slideUp(300,function(){
+    //   next.slideDown( 300);
+    // });
+    $(".UrgentDetails.active").addClass('UrgentDetailsTop').removeClass('active');
+    next.addClass('active');
+  }else{
+    // $(".UrgentDetails.active").slideUp(300,function(){
+    //   $(".UrgentDetails").first().slideDown( 300);
+
+    // });
+
+    $(".UrgentDetails.active").addClass('UrgentDetailsTop').removeClass('active');
+    $(".UrgentDetails").first().addClass('active');
+
+  }
+}, 3000);
